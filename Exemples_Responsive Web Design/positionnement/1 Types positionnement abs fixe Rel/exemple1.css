@@ -1,0 +1,30 @@
+  body 
+  {
+    color: black;
+    background-color: gray;
+    padding: 0;
+    margin:0;
+  }
+  div 
+  {
+	width: 20%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 15px;
+  }
+
+  #absolue 
+  {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    background-color: #f3c600;
+  }
+#relative
+ {
+    position: relative;
+    top: 25px;
+    right: 25px;
+    background-color: #f3c600;
+  }

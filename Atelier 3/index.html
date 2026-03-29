@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexHotel | Espace Client</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a href="index.html" class="logo" aria-label="Accueil FlexHotel">
+                <img src="logo.png" alt="FlexHotel">
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Ouvrir le menu">
+            <label for="menu-toggle" class="burger" aria-hidden="true">☰</label>
+
+            <ul class="menu">
+                <li><a href="index.html" class="active">Espace Client</a></li>
+                <li><a href="#hotels">Hotels</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="signup.html" class="btn-link">Sign in / Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-copy">
+                <h1>Espace Client</h1>
+                <p>Recherchez un hotel, comparez les chambres et suivez vos reservations.</p>
+            </div>
+
+            <form class="search-box" action="#" method="get">
+                <label for="zone" class="sr-only">Zone recherchee</label>
+                <input id="zone" name="zone" type="text" placeholder="Zone (ex: Maarif, Centre-ville)">
+
+                <label for="arrivee" class="sr-only">Date d'arrivee</label>
+                <input id="arrivee" name="arrivee" type="date">
+
+                <label for="depart" class="sr-only">Date de depart</label>
+                <input id="depart" name="depart" type="date">
+
+                <button type="submit">Rechercher</button>
+            </form>
+        </section>
+
+        <section id="hotels" class="section-block">
+            <h2>Hotels recommandes</h2>
+            <div class="grid-hotels">
+                <article class="card">
+                    <img src="image.png" alt="Hotel Atlas">
+                    <h3>Hotel Atlas</h3>
+                    <p>4 etoiles - 12 min du centre</p>
+                    <p class="price">A partir de 790 MAD / nuit</p>
+                    <button type="button">Voir details</button>
+                </article>
+
+                <article class="card">
+                    <img src="image.png" alt="Hotel Marina">
+                    <h3>Hotel Marina</h3>
+                    <p>5 etoiles - Vue mer</p>
+                    <p class="price">A partir de 1250 MAD / nuit</p>
+                    <button type="button">Voir details</button>
+                </article>
+
+                <article class="card">
+                    <img src="image.png" alt="Hotel Riad Urban">
+                    <h3>Hotel Riad Urban</h3>
+                    <p>3 etoiles - Petit dejeuner inclus</p>
+                    <p class="price">A partir de 560 MAD / nuit</p>
+                    <button type="button">Voir details</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="reservations" class="section-block">
+            <h2>Mes reservations</h2>
+            <div class="reservation-panel">
+                <p><strong>Reservation active :</strong> Hotel Marina - Chambre Double - 03/04/2026 au 06/04/2026</p>
+                <div class="reservation-actions">
+                    <button type="button">Payer maintenant</button>
+                    <button type="button" class="secondary">Annuler</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 FlexHotel - Espace Client</p>
+    </footer>
+</body>
+</html>

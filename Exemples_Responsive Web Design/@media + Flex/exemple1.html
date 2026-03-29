@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>
+body {
+  background-color: red;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: green;
+  }
+}
+</style>
+</head>
+<body>
+        <div id="ld" style="background:pink;color:#333;position:fixed;left:0;top:0;z-index:99999999;font:1em arial;opacity:.9">
+            </div>
+            <script>
+                //setInterval: exécute le code toute les 150 millisecondes 
+            setInterval(function()
+            {
+                    $('#ld').text($(document).width()+' px ** '+$(document).height()+' px');
+            },150);
+            </script>
+<h1>Resize the browser window to see the effect!</h1>
+<p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+</body>
+</html>

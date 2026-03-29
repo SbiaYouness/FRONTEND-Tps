@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style type="text/css">
+	/*
+	Dans l'exemple ci-dessous, nous avons deux paragraphes. 
+	Le paragraphe du haut a un margin-bottom de 50 pixels. 
+	Le second paragraphe a un margin-top de 30 pixels. 
+	Puisque ces deux margins se touchent, ils fusionnent ensemble, 
+	et ainsi le margin final entre les deux paragraphes est 
+	de 50 pixels et non 80, la somme des deux margins.
+	*/
+	.container {
+			border: 2px solid green;
+		}
+	.one {
+			margin-top:0px;
+			border: 2px solid blue;
+			margin-bottom: 50px;
+			}
+	.two {
+		  margin-top: 30px;
+		  border: 2px solid red;
+		}
+	</style>
+  </head>
+  <body>
+		<div class="container">
+			<p class="one">I am paragraph one.</p>
+			<p class="two">I am paragraph two.</p>
+		</div>
+</body>
+</html>

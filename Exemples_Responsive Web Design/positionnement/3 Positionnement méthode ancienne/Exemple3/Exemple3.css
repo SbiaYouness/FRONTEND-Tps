@@ -1,0 +1,31 @@
+.quoteBox {
+			border: 4px solid #ABC;
+			width: 600px;
+			padding: 10px;
+			line-height: 2em;
+			overflow: auto
+		}
+		
+		.featured {
+			background-color: #DEF;
+			padding: 5px;
+			font-style: italic;
+			font-size: 1.25em;
+			line-height: 1.25em;
+			width: 200px;
+			float: left;
+			margin-top: 10px;
+			margin-right: 10px;
+		}
+		
+		.author {
+			font-style: italic;
+			float: right;
+		}
+		
+		p {
+			margin: 0px;
+		}
+		p + p {
+			margin-top: 10px;
+		}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style type="text/css">
+	p, ul {
+			border: 2px solid rebeccapurple;
+			padding: .5em;
+		}
+	ul {
+			display: flex;
+			list-style: none;
+		  /*display: inline-flex;*//* ce qui fait du <ul> une boîte en ligne, contenant des éléments de liste (<li>) dipsosés en "flex".*/
+		}
+	.block,	li {
+	  border: 2px solid blue;
+	  padding: .5em;
+	}
+	.block {
+.	  display: block;
+	}      
+
+	</style>
+  </head>
+  <body>
+    <p>I am a paragraph. A short one.</p>
+	<ul>
+	  <li>Item One</li>
+	  <li>Item Two</li>
+	  <li>Item Three</li>
+	</ul>
+	<p>I am another paragraph. Some of the <span class="block">words</span> have been wrapped in a <span>span element</span>.</p>
+    
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+/*
+By default, the width and height of an element is calculated like this:
+
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+*/
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;  
+  border: 1px solid red;
+  padding: 50px;
+  box-sizing : border-box;
+}
+</style>
+</head>
+<body>
+
+<div class="div1">Both divs are the same size now!</div>
+<br>
+<div class="div2">Hooray!Both divs are the same size now!Both divs are the same size now!Both divs are the same size now!Both divs are the same size now!Both divs are the same size now!</div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexHotel | Sign in / Sign up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+    <header class="site-header">
+        <nav class="nav">
+            <a href="index.html" class="logo" aria-label="Accueil FlexHotel">
+                <img src="logo.png" alt="FlexHotel">
+            </a>
+
+            <ul class="menu auth-menu">
+                <li><a href="index.html">Espace Client</a></li>
+                <li><a href="signup.html" class="active">Sign in / Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container auth-layout">
+        <section class="auth-intro">
+            <h1>Bienvenue sur FlexHotel</h1>
+            <p>Connectez-vous pour suivre vos reservations ou creez un nouveau compte client.</p>
+            <img src="image.png" alt="Photo d'hotel">
+        </section>
+
+        <section class="auth-forms">
+            <article class="auth-card">
+                <h2>Sign in</h2>
+                <form action="#" method="post">
+                    <label for="signin-email">Email</label>
+                    <input id="signin-email" type="email" name="email" placeholder="votre@email.com" required>
+
+                    <label for="signin-password">Mot de passe</label>
+                    <input id="signin-password" type="password" name="password" placeholder="********" required>
+
+                    <button type="submit">Se connecter</button>
+                </form>
+            </article>
+
+            <article class="auth-card">
+                <h2>Sign up</h2>
+                <form action="#" method="post">
+                    <label for="signup-firstname">Prenom</label>
+                    <input id="signup-firstname" type="text" name="firstname" required>
+
+                    <label for="signup-lastname">Nom</label>
+                    <input id="signup-lastname" type="text" name="lastname" required>
+
+                    <label for="signup-email">Email</label>
+                    <input id="signup-email" type="email" name="email" required>
+
+                    <label for="signup-password">Mot de passe</label>
+                    <input id="signup-password" type="password" name="password" minlength="6" required>
+
+                    <button type="submit">Creer mon compte</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 FlexHotel - Authentification Client</p>
+    </footer>
+</body>
+</html>

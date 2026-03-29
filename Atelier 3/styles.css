@@ -1,0 +1,388 @@
+:root {
+    --primary: #0b3d91;
+    --primary-dark: #072b68;
+    --accent: #f2a900;
+    --text: #1f2933;
+    --muted: #5b6770;
+    --surface: #ffffff;
+    --surface-alt: #f4f7fb;
+    --border: #d9e2ec;
+    --radius: 12px;
+    --shadow: 0 10px 24px rgba(9, 30, 66, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    color: var(--text);
+    background: var(--surface-alt);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.menu a {
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+    color: var(--muted);
+    transition: 0.2s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: var(--primary);
+    background: #eaf0fb;
+}
+
+.btn-link {
+    background: var(--primary);
+    color: #fff !important;
+}
+
+.btn-link:hover {
+    background: var(--primary-dark);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.burger {
+    display: none;
+    font-size: 1.7rem;
+    line-height: 1;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.hero {
+    margin-top: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: clamp(1rem, 3vw, 2rem);
+}
+
+.hero h1 {
+    font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+    color: var(--primary);
+}
+
+.hero p {
+    margin-top: 0.45rem;
+    color: var(--muted);
+}
+
+.search-box {
+    margin-top: 1.2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 0.7rem;
+}
+
+.search-box input,
+.search-box button {
+    padding: 0.75rem 0.9rem;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    font: inherit;
+}
+
+.search-box button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: var(--primary-dark);
+}
+
+.section-block {
+    margin-top: 1.4rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.section-block h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+}
+
+.grid-hotels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.card h3,
+.card p,
+.card button {
+    margin: 0.6rem 0.85rem;
+}
+
+.price {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.card button,
+.reservation-actions button,
+.auth-card button {
+    border: none;
+    background: var(--primary);
+    color: #fff;
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font: inherit;
+}
+
+.card button:hover,
+.reservation-actions button:hover,
+.auth-card button:hover {
+    background: var(--primary-dark);
+}
+
+.reservation-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.reservation-panel p {
+    color: var(--muted);
+}
+
+.reservation-actions {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.reservation-actions .secondary {
+    background: #e6edf7;
+    color: var(--primary);
+}
+
+.site-footer {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    background: #1f2a44;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.auth-intro,
+.auth-forms {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.auth-intro h1 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.auth-intro p {
+    color: var(--muted);
+    margin-bottom: 1rem;
+}
+
+.auth-forms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
+}
+
+.auth-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.auth-card h2 {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.auth-card form {
+    display: grid;
+    gap: 0.55rem;
+}
+
+.auth-card label {
+    text-align: left;
+    font-size: 0.92rem;
+    color: var(--muted);
+}
+
+.auth-card input {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.65rem 0.75rem;
+    font: inherit;
+}
+
+.auth-card button {
+    margin-top: 0.45rem;
+}
+
+@media (max-width: 1024px) {
+    .grid-hotels {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .auth-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        padding: 0.7rem;
+    }
+
+    .menu a {
+        display: block;
+        border-radius: 8px;
+    }
+
+    .menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    .auth-menu {
+        display: flex;
+        position: static;
+        width: auto;
+        border: none;
+        padding: 0;
+        flex-direction: row;
+        gap: 0.4rem;
+    }
+
+    .search-box {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-hotels,
+    .auth-forms {
+        grid-template-columns: 1fr;
+    }
+}
+
