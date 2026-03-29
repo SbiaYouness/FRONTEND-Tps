@@ -3,44 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexHotel | Sign in / Sign up</title>
+    <title>FlexHotel | Sign up</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="auth-page">
+<body class="auth-page signup-page">
     <header class="site-header">
         <nav class="nav">
             <a href="index.html" class="logo" aria-label="Accueil FlexHotel">
-                <img src="logo.png" alt="FlexHotel">
+                <img src="assets/images/logo.png" alt="FlexHotel">
             </a>
 
             <ul class="menu auth-menu">
                 <li><a href="index.html">Espace Client</a></li>
-                <li><a href="signup.html" class="active">Sign in / Sign up</a></li>
+                <li><a href="signup.html" class="active">Sign up</a></li>
+                <li><a href="signin.html">Sign in</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container auth-layout">
         <section class="auth-intro">
-            <h1>Bienvenue sur FlexHotel</h1>
-            <p>Connectez-vous pour suivre vos reservations ou creez un nouveau compte client.</p>
-            <img src="image.png" alt="Photo d'hotel">
+            <h1>Join in and reserve your first hotel room</h1>
+            <p>Create your account in a few steps and start planning your next stay.</p>
+            <img src="assets/images/image4.jpg" alt="Scene de reservation d'hotel">
         </section>
 
-        <section class="auth-forms">
-            <article class="auth-card">
-                <h2>Sign in</h2>
-                <form action="#" method="post">
-                    <label for="signin-email">Email</label>
-                    <input id="signin-email" type="email" name="email" placeholder="votre@email.com" required>
-
-                    <label for="signin-password">Mot de passe</label>
-                    <input id="signin-password" type="password" name="password" placeholder="********" required>
-
-                    <button type="submit">Se connecter</button>
-                </form>
-            </article>
-
+        <section class="auth-forms auth-forms-single">
             <article class="auth-card">
                 <h2>Sign up</h2>
                 <form action="#" method="post">
@@ -58,12 +46,17 @@
 
                     <button type="submit">Creer mon compte</button>
                 </form>
+
+                <p class="switch-auth">
+                    Vous avez deja un compte ?
+                    <a href="signin.html">Sign in</a>
+                </p>
             </article>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>&copy; 2026 FlexHotel - Authentification Client</p>
+        <p>&copy; 2026 FlexHotel - Creation de compte</p>
     </footer>
 </body>
 </html>
